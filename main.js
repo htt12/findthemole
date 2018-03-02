@@ -4,7 +4,7 @@ var scoreCount = 0;
 
 function initializeApp(){
     attachClickHandlers();
-    moveRandomMole();
+    setTimeout(moveRandomMoleUp, 1500);
 }
 
 function attachClickHandlers(){
@@ -20,7 +20,7 @@ function handleClickEvent(){
     }
 }
 
-function moveRandomMole(){
+function moveRandomMoleUp(){
     
     var randomNum = Math.floor(Math.random() * 3);
     
@@ -31,4 +31,5 @@ function moveRandomMole(){
     }else if(randomNum === 2){
         $('.mole3').addClass('animate');
     }
+
 }
