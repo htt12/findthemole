@@ -13,10 +13,17 @@ html, body{
     width: 30%;
 }
 
-.mole{
+.mole1, .mole2, .mole3 {
     position: relative;
     display: inline-block;
     border: 2px black solid;
+    height: 50vh;
+    width: 30vw;
+    -webkit-transition: -webkit-transform 2s ease-in-out;
+}
+
+.animate {
+    -webkit-transform:translate(100px,100px);
     height: 100%;
     width: 30%;
 }
