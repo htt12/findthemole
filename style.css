@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.container{
+    height: 70%;
+    width: 100%;
+}
+
+.row{
+    margin-left: 1%;
+    height: 32%;
+    width: 83%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.box{
+    height: 75%;
+    width: 32%;
+    display: flex;
+    align-items: flex-end;
+    align-content: center;
+}
+
+.dirt{
+    width: 90%;
+    height: 55%;
+    background-image: url("./images/dirt.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
