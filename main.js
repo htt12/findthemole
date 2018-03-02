@@ -1,5 +1,6 @@
 $('document').ready(initializeApp);
 
+var scoreCount = 0;
 
 function initializeApp(){
     attachClickHandlers();
@@ -10,5 +11,10 @@ function attachClickHandlers(){
 }
 
 function handleClickEvent(){
-    console.log('handClickEvent was called.')
+
+    if($(this).hasClass('mole')){
+        scoreCount++;
+        $('.score-value').text(scoreCount);
+    }
+    
 }
