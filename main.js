@@ -1,3 +1,4 @@
+
 $('document').ready(initializeApp);
 
 
@@ -11,4 +12,5 @@ function attachClickHandlers(){
 
 function handleClickEvent(){
     console.log('handClickEvent was called.')
+
 }
