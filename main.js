@@ -18,11 +18,11 @@ function moveRandomMole(){
     
     var randomNum = Math.floor(Math.random() * 3);
     
-    if(randomNum === 0){
-        $('.box1').addClass('animate');
-    }else if(randomNum === 1){
-        $('.box2').addClass('animate');
-    }else if(randomNum === 2){
-        $('.box3').addClass('animate');
-    }
+    // if(randomNum === 0){
+    //     $('.box1').addClass('animate');
+    // }else if(randomNum === 1){
+    //     $('.box2').addClass('animate');
+    // }else if(randomNum === 2){
+    //     $('.box3').addClass('animate');
+    // }
 }
