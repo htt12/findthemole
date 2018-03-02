@@ -1,3 +1,4 @@
+
 $('document').ready(initializeApp);
 
 var scoreCount = 0;
