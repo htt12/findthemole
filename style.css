@@ -12,8 +12,8 @@ body{
     background-repeat: no-repeat;
     display: flex;
     align-items: flex-end;
-
 }
+
 
 .container{
     height: 70%;
@@ -43,4 +43,35 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+.mole1, .mole2, .mole3 {
+    position: relative;
+    display: inline-block;
+    border: 2px black solid;
+    height: 50vh;
+    width: 30vw;
+    -webkit-transition: -webkit-transform 2s ease-in-out;
+}
+
+.animate {
+    -webkit-transform:translate(100px,100px);
+    height: 100%;
+    width: 30%;
+}
+
+.scoreContainer{
+    border: 2px red solid;
+    position: relative;
+    height: 30%;
+    width: 20%;
+    text-align: center;
+}
+
+.score-title{
+    border: 2px blue solid;
+}
+.score-value{
+    border: 2px blueviolet solid;
+
 }
