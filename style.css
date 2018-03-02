@@ -51,11 +51,17 @@ body{
     border: 2px black solid;
     height: 50vh;
     width: 30vw;
-    -webkit-transition: -webkit-transform 2s ease-in-out;
+    -webkit-transition: -webkit-transform 500ms ease-in-out;
 }
 
-.animate {
-    -webkit-transform:translate(100px,100px);
+.animateUp {
+    -webkit-transform:translate(0px,-70px);
+    height: 100%;
+    width: 30%;
+}
+
+.animateDown {
+    -webkit-transform:translate(0px,0px);
     height: 100%;
     width: 30%;
 }

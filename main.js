@@ -1,9 +1,10 @@
 $('document').ready(initializeApp);
 
 var scoreCount = 0;
+var moleArray = [0, 1, 2];
 
 function initializeApp(){
-    moveRandomMole();
+    setTimeout(moveRandomMoleUp, 1500);
 }
 
 function attachClickHandlers(moleNumber){
@@ -12,23 +13,41 @@ function attachClickHandlers(moleNumber){
 
 function handleClickEvent(){
     $('.mole').off('click');
-    if($(this).hasClass('mole') && clickCount<3){
+    if($(this).hasClass('mole')){
         scoreCount++;
         $('.score-value').text(scoreCount);
     }
 }
 
-function moveRandomMole(){
+function moveRandomMoleUp(){
     
     var randomNum = Math.floor((Math.random() * 3)+1);
     
     if(randomNum === 1){
-        $('.mole1').addClass('animate');
+        $('.mole1').addClass('animateUp');
+        setTimeout(function(){
+            $('.mole1').removeClass('animateUp');
+            $('.mole1').addClass('animateDown');
+        }, 500);
     }else if(randomNum === 2){
-        $('.mole2').addClass('animate');
+        $('.mole2').addClass('animateUp');
+        setTimeout(function(){
+            $('.mole2').removeClass('animateUp');
+            $('.mole2').addClass('animateDown');
+        }, 500);
     }else if(randomNum === 3){
-        $('.mole3').addClass('animate');
+        $('.mole3').addClass('animateUp');
+        setTimeout(function(){
+            $('.mole3').removeClass('animateUp');
+            $('.mole3').addClass('animateDown');
+        }, 500);
     }
 
     attachClickHandlers(randomNum);
+    setTimeout(checkMoleForClass, 500);
+}
+
+function moveMoleDown(){
+    
+    $().addClass('animateDown');
 }
