@@ -1,8 +1,10 @@
 $('document').ready(initializeApp);
 
+var scoreCount = 0;
 
 function initializeApp(){
     attachClickHandlers();
+    moveRandomMole();
 }
 
 function attachClickHandlers(){
@@ -11,18 +13,22 @@ function attachClickHandlers(){
 
 function handleClickEvent(){
     console.log('handClickEvent was called.')
-    moveRandomMole();
+
+    if($(this).hasClass('mole')){
+        scoreCount++;
+        $('.score-value').text(scoreCount);
+    }
 }
 
 function moveRandomMole(){
     
     var randomNum = Math.floor(Math.random() * 3);
     
-    // if(randomNum === 0){
-    //     $('.box1').addClass('animate');
-    // }else if(randomNum === 1){
-    //     $('.box2').addClass('animate');
-    // }else if(randomNum === 2){
-    //     $('.box3').addClass('animate');
-    // }
+    if(randomNum === 0){
+        $('.mole1').addClass('animate');
+    }else if(randomNum === 1){
+        $('.mole2').addClass('animate');
+    }else if(randomNum === 2){
+        $('.mole3').addClass('animate');
+    }
 }
