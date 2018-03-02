@@ -1,0 +1,17 @@
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.box{
+    position: relative;
+    display: inline;
+}
+
+.mole{
+    position: relative;
+    display: inline-block;
+    border: 2px black solid;
+    height: 50vh;
+    width: 30vw;
+}
