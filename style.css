@@ -1,0 +1,38 @@
+html, body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    height: 70%;
+    width: 100%;
+}
+.box{
+    display: inline-block;
+    height: 80%;
+    width: 30%;
+}
+
+.mole{
+    position: relative;
+    display: inline-block;
+    border: 2px black solid;
+    height: 100%;
+    width: 30%;
+}
+
+.scoreContainer{
+    border: 2px red solid;
+    position: relative;
+    height: 30%;
+    width: 20%;
+    text-align: center;
+}
+
+.score-title{
+    border: 2px blue solid;
+}
+.score-value{
+    border: 2px blueviolet solid;
+
+}
