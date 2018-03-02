@@ -12,7 +12,7 @@ function attachClickHandlers(moleNumber){
 
 function handleClickEvent(){
     $('.mole').off('click');
-    if($(this).hasClass('mole') && clickCount<3){
+    if($(this).hasClass('mole')){
         scoreCount++;
         $('.score-value').text(scoreCount);
     }
